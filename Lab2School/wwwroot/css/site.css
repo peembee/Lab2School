@@ -1,0 +1,58 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+}
+
+.homePageLink {
+    margin: 40px;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 70%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    box-shadow: 10px 10px 20px;
+    transition: 0.5s;
+}
+    .homePageLink:hover {    
+        padding: 45px;
+        transition: 0.5s;
+    }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.EmployeeIndexPageTextBtn{
+    text-decoration: none;
+    color:whitesmoke;
+    
+}
+
+.editCourseNameInputs {
+    border-radius: 5px;
+    
+}

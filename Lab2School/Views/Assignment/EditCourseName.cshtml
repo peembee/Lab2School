@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Course>
+
+@{
+    ViewData["Title"] = "EditCourseName";
+}
+
+<h1>Edit Course-Name</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseName)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditCourseNameInputs">
+
+            <div class="form-group">
+                <label for="courseName" class="control-label"></label>
+                <input name="courseName" class="editCourseNameInputs" id="courseName"  placeholder="Course-Name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="newCourseName" class="control-label"></label>
+                <input name="newCourseName" class="editCourseNameInputs" id="newCourseName"  placeholder=" New Course-Name" required />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

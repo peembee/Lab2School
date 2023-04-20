@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Teacher>
+
+@{
+    ViewData["Title"] = "UpdateTeacher";
+}
+
+<h1>Update the teachers current firstname from programming 1</h1>
+<h3>Enter the firstname you want for the teacher</h3>
+
+<hr />
+<div class="row">  
+    <div class="col-md-4">
+        <form asp-action="UpdateTeacherInput">
+
+            <div class="form-group">
+                <label for="oldTeacherName" class="control-label"></label>
+                <input type="text" name="oldTeacherName" id="oldTeacherName" class="form-control" placeholder="Current Teacher Firstname" required />
+            </div> 
+
+            <div class="form-group">
+                <label for="newTeacherName" class="control-label"></label>
+                <input type="text" name="newTeacherName" id="newTeacherName" class="form-control" placeholder="New Teacher Firstname" required />
+            </div>           
+            <div class="form-group">
+                <input type="submit" value="No Regret now!" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

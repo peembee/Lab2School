@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Lab2School.Models.Teacher>
+
+@{
+    ViewData["Title"] = "GetAllEmployees";
+}
+
+<h1>GetAllEmployees</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherFirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherLastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherEmail)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherFirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherLastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherEmail)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
