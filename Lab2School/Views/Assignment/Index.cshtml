@@ -2,52 +2,45 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-
-<div class="row">
-    <div class="col-lg-6 col-md-4">
-        <div class="container">
-            
-                <div class="homePageLink">
-                    <h5>Hämta lärare från kursen: Programmering 1 </h5>
-                    <button type="button" class="btn btn-dark">
-                        <a asp-action="GetAllEmployees" class="EmployeeIndexPageTextBtn">Shot!</a>
-                    </button>
-                </div>                
-
-                 <div class="homePageLink">
-                    <h5>Hämta alla elever med deras lärare, skriv ut både elevernas namn och namnet på alla lärare de har</h5>
-                    <button type="button" class="btn btn-dark">
-                        <a asp-action="GetAllStudentsAndTeachers" class="EmployeeIndexPageTextBtn">Shot!</a>
-                    </button>
-                </div>
-
-                <div class="homePageLink">
-                    <h5>Hämta alla elever som läser “programmering 1” och skriv ut deras namn samt vilka lärare de har i den kursen</h5>
-                    <button type="button" class="btn btn-dark">
-                        <a asp-action="GetAllStudentsInCourse" class="EmployeeIndexPageTextBtn">
-                             Shot!
-                        </a>
-                    </button>
-                </div>
-
-                <div class="homePageLink">
-                    <h5>Editera ett ämne från “programmering 2” till “OOP”</h5>
-                    <button type="button" class="btn btn-dark">
-                        <a asp-action="EditCourseName" class="EmployeeIndexPageTextBtn">
-                             Shot! 
-                        </a>
-                    </button>
-                </div
-
-                ><div class="homePageLink">
-                    <h5>Uppdatera en elevs lärare i “programmering1” från Reidar till Tobias.</h5>
-                    <button type="button" class="btn btn-dark">
-                            <a asp-action="UpdateTeacher" class="EmployeeIndexPageTextBtn">
-                                 Shot!
-                           </a>  
-                    </button>
-                </div>
-        </div>
+<menu>            
+    <div class="homePageLink">
+        <h5>Hämta lärare från kursen: Programmering 1 </h5>
+        <button type="button" class="btn btn-dark">
+            <a asp-action="GetAllEmployees" class="EmployeeIndexPageTextBtn">Shot!</a>
+        </button>
+    </div> 
+    
+    <div class="homePageLink">
+        <h5>Hämta alla elever med deras lärare, skriv ut både elevernas namn och namnet på alla lärare de har</h5>
+        <button type="button" class="btn btn-dark">
+            <a asp-action="GetAllStudentsAndTeachers" class="EmployeeIndexPageTextBtn">Shot!</a>
+        </button>
     </div>
-</div>
+
+    <div class="homePageLink">
+        <h5>Hämta alla elever som läser “programmering 1” och skriv ut deras namn samt vilka lärare de har i den kursen</h5>
+        <button type="button" class="btn btn-dark">
+            <a asp-action="GetAllStudentsInCourse" class="EmployeeIndexPageTextBtn">
+                    Shot!
+            </a>
+        </button>
+    </div>
+
+    <div class="homePageLink">
+        <h5>Editera ett ämne från “programmering 2” till “OOP”</h5>
+        <button type="button" class="btn btn-dark">
+            <a asp-action="EditCourseName" class="EmployeeIndexPageTextBtn">
+                    Shot! 
+            </a>
+        </button>
+    </div
+
+    ><div class="homePageLink">
+        <h5>Uppdatera en elevs lärare i “programmering1” från Reidar till Tobias.</h5>
+        <button type="button" class="btn btn-dark">
+                <a asp-action="UpdateTeacher" class="EmployeeIndexPageTextBtn">
+                        Shot!
+                </a>  
+        </button>
+    </div>          
+</menu>

@@ -20,6 +20,7 @@ html {
 body {
     margin-bottom: 60px;
     background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    
 }
 
 .homePageLink {
@@ -34,6 +35,7 @@ body {
     background-image: linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
     box-shadow: 10px 10px 20px;
     transition: 0.5s;
+    border: 1px solid blue;
 }
     .homePageLink:hover {    
         padding: 45px;
